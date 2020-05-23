@@ -8,6 +8,7 @@ And the improved version will be uploaded later!
 splots management system updata
 
 &tips
+
 1.Support Chinese.
 
 2.Improve user experience when selecting a new instruction.

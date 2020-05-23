@@ -1,11 +1,11 @@
-this is a management system baased on graph!
+This is a management system based on graph!
 
 just the baseline!
 
 And the improved version will be uploaded later!
 
 2020.5.23
-splots management system updata
+spots management system updata
 
 &tips
 

@@ -13,6 +13,9 @@ splots management system updata
 3.Fix some bugs.
 
 基于图数据结构的景区管理系统
+
 采用邻接矩阵存储图结构
+
 实现了查找 导航 规划路径等功能
+
 实现了DFS Dijkstra Floyd Kruskal 等算法

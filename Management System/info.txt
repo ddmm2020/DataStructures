@@ -1,0 +1,8 @@
+7
+0,park,green tree and beautiful flower
+1,school,there are many students
+2,market,you can buy something here
+3,ktv,you can sing here
+4,whut,my school
+5,cinema,you can watch movies with your girlfriend here
+6,company,you will work here

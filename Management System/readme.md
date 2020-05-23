@@ -9,7 +9,9 @@ splots management system updata
 
 &tips
 1.Support Chinese.
+
 2.Improve user experience when selecting a new instruction.
+
 3.Fix some bugs.
 
 基于图数据结构的景区管理系统

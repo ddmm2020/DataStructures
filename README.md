@@ -1,2 +1,3 @@
 # DataStructures
-some projects about data structure
+These are some projects about data structure
+

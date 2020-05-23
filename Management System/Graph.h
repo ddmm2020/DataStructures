@@ -4,7 +4,7 @@
  * @Author: ddmm
  * @Date: 2020-05-19 15:09:09
  * @LastEditors: ddmm
- * @LastEditTime: 2020-05-23 16:08:56
+ * @LastEditTime: 2020-05-23 21:55:09
  */ 
 
 #include<bits/stdc++.h>
@@ -13,16 +13,25 @@ using namespace::std;
 
 struct Vex{
     int num;//景点编号
-    char name[20];//景点名称
-    char desp[1024];//景点描述
+    string name;//景点名称
+    string desp;//景点描述
+
+    Vex& operator=(Vex& tmp)
+    {
+        num=tmp.num;
+        name=tmp.name;
+        desp=tmp.desp;
+        return *this;
+    }
+    Vex(int num,string name,string desp):num(num),name(name),desp(desp){};
     //Vex(uint8_t num,char name[20],char desp[1024]):num(num),name(name),desp(desp){};
 
-    Vex(int tnum,char tname[20],char tdesp[1024]){
-        num =tnum;
-        memcpy(name,tname,20);
-        memcpy(desp,tdesp,1024);
-        //printf("插入第%d个节点成功",num);
-    };
+    // Vex(int tnum,char tname[20],char tdesp[1024]){
+    //     num =tnum;
+    //     memcpy(name,tname,20);
+    //     memcpy(desp,tdesp,1024);
+    //     //printf("插入第%d个节点成功",num);
+    // };
     Vex(){};
 };
 
@@ -67,7 +76,7 @@ private:
     Edge m_aEdges[100];//边信息数组
     int m_aEdgeNum;//边的个数
     int m_nVexNum;//当前图的顶点个数
-    unordered_map<int,char[20]> id_to_string;
+    unordered_map<int,string> id_to_string;
     vector<int> visited;
     vector<int> stack;
     vector<Path> paths;
@@ -80,7 +89,7 @@ public:
     void Init();
     void loadVex();
     void loadPath();
-    bool InsertVex(Vex sVex);
+    bool InsertVex();
     bool InsertEdge(Edge sEdge);
     Vex GetVex(int nVex);
     int GetVexnum();
@@ -91,8 +100,8 @@ public:
     void DFS(vector<int> &visited,vector<int>&stack,int start_num,int end_num,int depth);
     void DFSTraverse();
     //int FindShortestPath();
-    void Dijkstra(int start);
-    void Floyd(int start,int end);
+    void Dijkstra();
+    void Floyd();
     void FindMinTree();
 };
 
